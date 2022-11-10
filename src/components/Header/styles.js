@@ -26,7 +26,7 @@ export const column = styled.div `
 export const Wrapper = styled.div`
     background-color: #151515;
     width: 100%;
-    height: 47px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,22 +48,34 @@ export const BuscarInputContainer = styled.div`
 export const Menu = styled.a`
     font-family: 'Open sans';
     font-style: normal;
-    font-size: 12px;
+    font-size: .9rem;
+    font-weight: bold;
     line-height: 25px;
     color: #FFFF;
     margin-right: 12px;
     text-decoration: none;
     cursor: pointer;
+    
+    &:hover{
+        color: #E4105D; 
+        transition: .5s;
+    }
 `
 
 export const MenuRight = styled.a`
     font-family: 'Open sans';
     font-style: normal;
-    font-size: 12px;
+    font-size: .9rem;
+    font-weight: bold;
     line-height: 25px;
     color: #FFFF;
     margin-right: 12px;
     text-decoration: none;
+
+    &:hover{
+        color: #E4105D; 
+        transition: .5s;
+    }
 `
 
 export const UserPicture = styled.img`

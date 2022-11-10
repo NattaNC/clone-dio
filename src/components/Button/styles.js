@@ -7,13 +7,14 @@ export const ButtonContainer = styled.button `
     position: relative;
 
     color: #ffff;
-    padding: 2px 12px; 
+    padding: 3px 12px; 
     min-width: 120px; 
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    border: none;
 
     cursor: pointer;
-    margin: 1rem;
+    margin-left: 1rem;
 
     &:hover {
         background: #E4105D;
@@ -25,10 +26,18 @@ export const ButtonContainer = styled.button `
         height: 33px;
 
         background: #E4105D;
+        color: #000;
+        font-weight: 600; 
+        font-size: 1rem;
+        text-transform: uppercase;
+
+        &:hover {
+            opacity: .6;
+        }
 
         cursor: pointer;
         &::after {
-            content: '',
+            content: '';
             position: absolute;
             border: 1px solid #E4105D;
             top: -5px;
