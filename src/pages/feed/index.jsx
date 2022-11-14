@@ -1,13 +1,32 @@
 
 import { Header } from '../../components/Header'
 import { Card } from '../../components/Card'
-import {Container,} from './styles'
+import { UserInfo } from '../../components/UserInfo'
+import {Container, Column, Title, TitleHighlight} from './styles'
 
 const Feed = () => {
     return (<>
-        <Header />
+        <Header autenticado={true}/>
         <Container>
-           <Card />
+            <Column flex={3}>
+                <Title>Feed</Title>
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+            </Column>
+            <Column flex={1}>
+                <TitleHighlight>#RANKING 5 TOP DA SEMANA</TitleHighlight>
+                <UserInfo percentual={67} nome='Pablo Henrrique' image="https://avatars.githubusercontent.com/u/45184516?v=4" />
+                <UserInfo percentual={12} nome='Pablo Henrrique' image="https://avatars.githubusercontent.com/u/45184516?v=4" /> 
+                <UserInfo percentual={98} nome='Pablo Henrrique' image="https://avatars.githubusercontent.com/u/45184516?v=4" /> 
+                <UserInfo percentual={25} nome='Pablo Henrrique' image="https://avatars.githubusercontent.com/u/45184516?v=4" /> 
+                <UserInfo percentual={75} nome='Pablo Henrrique' image="https://avatars.githubusercontent.com/u/45184516?v=4" /> 
+            </Column>
         </Container>
     </> )
 }
